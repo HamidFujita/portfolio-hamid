@@ -1,0 +1,114 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Cor da fonte do corpo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header-content .texto {
+    text-align: left;
+}
+
+.header-content .foto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Estilo das Abas */
+.abas {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #004080;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; /* Garantir que o texto da aba fique visível */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.tab-button:hover {
+    background-color: #004080;
+    color: white;
+}
+
+.tab-button.active {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+}
+
+/* Conteúdo das Abas */
+.tab-content {
+    display: none;
+    padding: 1rem;
+    color: #333; /* Cor do texto do conteúdo das abas */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilo do botão interativo */
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ddd;
+}
